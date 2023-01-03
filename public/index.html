@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-[#F7EFED]">
     <div class="mx-[100px] mt-[57px]">
@@ -64,19 +71,74 @@
                 Presenting the Classic Nachos with a Flaming Hot Twist. It will
                 Rock your taste buds with Chilli & Lime.
               </p>
-              <div class="h-[76px] bg-red-300"></div>
+              <div class="mt-6 flex items-center">
+                <!-- add card btn -->
+                <div class="inline-flex bg-black p-1 rounded-full items-center">
+                  <div
+                    class="flex bg-[#FFCC44] w-[60px] h-[60px] justify-center items-center rounded-full text-xl"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <span class="text-white uppercase px-5 text-base"
+                    >Add To Cart</span
+                  >
+                </div>
+
+                <!-- plus product -->
+                <div class="flex ml-10 items-center">
+                  <div
+                    class="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center mr-4 shadow-lg hover:shadow-xl cursor-pointer"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div
+                    class="w-[56px] h-[56px] bg-white rounded-full flex items-center justify-center text-2xl shadow-lg hover:shadow-xl relative after:absolute after:w-[70px] after:h-[70px] after:border after:rounded-full after:border-yellow-300"
+                  >
+                    5
+                  </div>
+                  <div
+                    class="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center ml-4 shadow-lg hover:shadow-xl cursor-pointer"
+                  >
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- img -->
           <img src="./img/productpng.png" alt="" class="w-[40%]" />
 
-          <ul class="w-[10%]">
-            <li class="">Corn</li>
-            <li class="">Chili</li>
-            <li class="">Spices</li>
+          <ul class="w-[10%] flex flex-col items-center justify-center">
+            <li class="flex items-center mb-8">
+              <div
+                class="w-20 h-20 bg-1/2 bg-[#206456] rounded-full bg-center bg-no-repeat shadow-lg"
+                style="background-image: url(./img/chili.png)"
+              ></div>
+              <span class="uppercase text-xl ml-8">Chili</span>
+            </li>
+
+            <li class="flex items-center mb-8">
+              <div
+                class="w-20 h-20 bg-1/2 bg-[#D51037] rounded-full bg-center bg-no-repeat shadow-lg"
+                style="background-image: url(./img/corn.png)"
+              ></div>
+              <span class="uppercase text-xl ml-8">Corn</span>
+            </li>
+
+            <li class="flex items-center mb-8">
+              <div
+                class="w-20 h-20 bg-1/2 bg-[#FDB339] rounded-full bg-center bg-no-repeat shadow-lg"
+                style="background-image: url(./img/spices.png)"
+              ></div>
+              <span class="uppercase text-xl ml-8">Spices</span>
+            </li>
           </ul>
         </div>
+      </section>
+
+      <section>
+        <div class="bg-[#23675A] h-[200px] rounded-t-[50px]">23</div>
       </section>
     </div>
   </body>
